@@ -24,4 +24,13 @@ parameter1 = input('Input User1 choose (Rock, Paper or Scissors): ')
 parameter2 = input('Input User2 choose (Rock, Paper or Scissors): ')
 
 lst = ['Rock', 'Paper', 'Scissors']
-# if lst.__contains__(parameter1) and lst.__contains__(paramet
+
+# if lst.__contains__(parameter1) and lst.__contains__(parametlst = ['Rock', 'Paper', 'Scissors']
+if parameter1 in lst and  parameter2 in lst:
+    print(game(parameter1, parameter2))
+else:
+    print ("Error input")
+    if parameter1 not in lst:
+        print("Input User1 Error!")
+    else:
+        print("Input User2 Error!")
