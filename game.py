@@ -1,4 +1,7 @@
 def game(parameter1, parameter2):
+    user1_input = parameter1.lower()
+    user2_input = parameter2.lower()
+
     if parameter1 == parameter2:
         return "Draw"
     elif (parameter1 == "Rock") and (parameter2 == "Scissors"):
@@ -16,9 +19,9 @@ def game(parameter1, parameter2):
     else:
         return "You input a wrong value!!!"
 
+
 parameter1 = input('Input User1 choose (Rock, Paper or Scissors): ')
 parameter2 = input('Input User2 choose (Rock, Paper or Scissors): ')
 
 lst = ['Rock', 'Paper', 'Scissors']
-if lst.__contains__(parameter1) and lst.__contains__(parameter2):
-    print(game(parameter1, parameter2))
+# if lst.__contains__(parameter1) and lst.__contains__(paramet
