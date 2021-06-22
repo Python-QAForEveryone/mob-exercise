@@ -1,31 +1,29 @@
-def game(parameter1, parameter2):
-    user1_input = parameter1.lower()
-    user2_input = parameter2.lower()
+def game(user1_input, user2_input):
+    user1_input = user1_input.lower()
+    user2_input = user2_input.lower()
 
-    if parameter1 == parameter2:
+    if user1_input == user2_input:
         return "Draw"
-    elif (parameter1 == "Rock") and (parameter2 == "Scissors"):
+    elif (user1_input == "rock") and (user2_input == "scissors"):
         return "User1 won!!!"
-    elif (parameter2 == "Rock") and (parameter1 == "Scissors"):
+    elif (user2_input == "rock") and (user1_input == "scissors"):
         return "User2 won!!!"
-    elif (parameter1 == "Rock") and (parameter2 == "Paper"):
+    elif (user1_input == "rock") and (user2_input == "paper"):
         return "User2 won!!!"
-    elif (parameter2 == "Rock") and (parameter1 == "Paper"):
+    elif (user2_input == "rock") and (user1_input == "paper"):
         return "User1 won!!!"
-    elif (parameter1 == "Paper") and (parameter2 == "Scissors"):
+    elif (user1_input == "paper") and (user2_input == "scissors"):
         return "User2 won!!!"
-    elif (parameter2 == "Paper") and (parameter1 == "Scissors"):
+    elif (user2_input == "paper") and (user1_input == "scissors"):
         return "User1 won!!!"
     else:
         return "You input a wrong value!!!"
 
+parameter1 = input('Input User1 choose (rock, paper or scissors): ').lower()
+parameter2 = input('Input User2 choose (rock, paper or scissors): ').lower()
 
-parameter1 = input('Input User1 choose (Rock, Paper or Scissors): ')
-parameter2 = input('Input User2 choose (Rock, Paper or Scissors): ')
+lst = ['rock', 'paper', 'scissors']
 
-lst = ['Rock', 'Paper', 'Scissors']
-
-# if lst.__contains__(parameter1) and lst.__contains__(parametlst = ['Rock', 'Paper', 'Scissors']
 if parameter1 in lst and  parameter2 in lst:
     print(game(parameter1, parameter2))
 else:
